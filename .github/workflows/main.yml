@@ -44,7 +44,7 @@ jobs:
 
       - name: Test Python code
         run: pytest test_app.py
-  Deploy:  
+  
       - name: deployment step
         uses: appleboy/ssh-action@v1.0.0
         with:
