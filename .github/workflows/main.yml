@@ -55,3 +55,4 @@ jobs:
          script: | 
           whoami
           echo "hello"
+          touch /home/ubuntu/test.txt
