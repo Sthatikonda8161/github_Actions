@@ -55,5 +55,8 @@ jobs:
          script: | 
           whoami
           echo "hello"
+          cd /home/ubuntu/
+          mkdir Githubactions
           git clone https://github.com/Sthatikonda8161/github_Actions.git
+          
           
