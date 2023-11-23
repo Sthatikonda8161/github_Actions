@@ -55,4 +55,5 @@ jobs:
          script: | 
           whoami
           echo "hello"
-          touch /home/ubuntu/test.txt
+          git clone https://github.com/Sthatikonda8161/github_Actions.git
+          
