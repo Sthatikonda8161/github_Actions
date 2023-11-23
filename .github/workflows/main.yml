@@ -1,8 +1,46 @@
-name: hello-world
-on: push
+name: Build and Test flask application
+
+on:
+  push:
+    branches:
+      - dev
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+          
+      - name: Install Flask
+        run: pip install flask
+
+      - name: Run Flask Application
+        run: python app.py &
+  test:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+          
+      - name: Set executable permission
+        run: chmod +x test_app.py
+
+      - name: Install Flask
+        run: pip install flask
+
+      - name: Install pytest
+        run: pip install pytest
+
+
+      - name: Test Python code
+        run: pytest test_app.py
