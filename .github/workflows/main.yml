@@ -3,7 +3,7 @@ name: Build and Test flask application
 on:
   push:
     branches:
-      - dev
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
