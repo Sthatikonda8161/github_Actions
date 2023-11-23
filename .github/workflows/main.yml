@@ -56,7 +56,9 @@ jobs:
           whoami
           echo "hello"
           cd /home/ubuntu/
-          mkdir Githubactions
           git clone https://github.com/Sthatikonda8161/github_Actions.git
+          sudo apt install -y python3-pip
+          sudo pip install flask
+          python github_Actions/app.py
           
           
