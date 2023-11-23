@@ -44,14 +44,13 @@ jobs:
 
       - name: Test Python code
         run: pytest test_app.py
-        
       - name: deployment step
         uses: appleboy/ssh-action@v1.0.0
-         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          port: ${{ secrets.PORT }}
-          script: | 
+        with:
+         host: ${{ secrets.EC2_HOST }}
+         username: ${{ secrets.EC2_USERNAME }}
+         key: ${{ secrets.EC2_SSH_KEY }}
+         port: ${{ secrets.PORT }}
+         script: | 
           whoami
           echo "hello"
