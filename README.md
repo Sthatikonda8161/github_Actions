@@ -9,7 +9,8 @@ Github Repo: https://github.com/Sthatikonda8161/github_Actions.git
 2. GitHub Actions Workflow:
    - Create a .github/workflows directory in your repository.
    - Inside the directory, create a YAML file to define the workflow
-```
+![image](https://github.com/Sthatikonda8161/github_Actions/assets/136583514/4206a72f-dbdd-4127-9365-b28ba0f6dc3b)
+
 
 3. Workflow Steps:
    - Define a workflow that performs the following jobs:
@@ -25,3 +26,9 @@ Github Repo: https://github.com/Sthatikonda8161/github_Actions.git
 
 4. Environment Secrets:
    - Use GitHub Secrets to store sensitive information required for deployments (e.g., deployment keys, API tokens).
+  
+![image](https://github.com/Sthatikonda8161/github_Actions/assets/136583514/0d5145bb-d125-44f6-82ff-0e8117b9db00)
+
+![image](https://github.com/Sthatikonda8161/github_Actions/assets/136583514/d99b8968-6977-4906-b1cb-58dd30beb35f)
+
+
