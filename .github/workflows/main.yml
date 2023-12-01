@@ -55,4 +55,8 @@ jobs:
         port: ${{ secrets.PORT }}
         script: | 
           git clone https://github.com/Sthatikonda8161/github_Actions.git
+          sudo apt install -y python3-pip
+          sudo pip install flask
+          python3 github_Actions/app.py
+
           
